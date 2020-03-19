@@ -74,7 +74,7 @@ When application starts, go to settings and update username, after which you can
 
 #### Alternatively
 
-Just run npm start in root folder and the app will be hosted on `http://localhost:3001`
+Run npm start in root folder and the app will be hosted on `http://localhost:3001`
 
 **Happy Chatting!** :smile:
 
