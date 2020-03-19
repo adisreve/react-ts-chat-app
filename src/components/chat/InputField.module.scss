@@ -1,0 +1,44 @@
+.inputContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    input[type="text"] {
+        width: 75%;
+        padding: 15px 15px;
+        font-size: 1.6rem;
+        font-family: 'Raleway Regular', sans-serif;
+        outline: none;
+        border-radius: 0;
+        border: 1px solid rgba(0,0,0,0.15);
+        box-shadow: 1px 0px 18px 1px rgba(0,0,0,0.15);
+
+        &::placeholder {
+            padding-left:5px;
+        }
+
+        &::focus {
+            border-radius: 0;
+        }
+    }
+
+    button {
+        width: 25%;
+        padding: 15px;
+        border: none;
+        background-color: pink;
+        justify-content: flex-end;
+        cursor: pointer;
+        color: #555;
+        font-size: 1.5rem;
+        transition: .3s all ease-in-out;
+        font-family: 'IBM Plex Mono Bold', sans-serif;
+        text-transform: uppercase;
+        border-radius:0;
+
+        &:hover {
+            background-color: rgb(116, 76, 82);
+            color: #eee;
+        }
+    }
+}

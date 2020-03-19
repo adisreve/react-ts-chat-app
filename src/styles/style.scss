@@ -1,0 +1,97 @@
+// Global Styles
+
+@import '_fonts';
+@import '_keyframes';
+@import '_variables';
+// @import 'utils';
+
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway Regular', sans-serif;
+    font-size: 1.4rem;
+    transition: .3s background-color ease-in-out;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ul, li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body, .header {
+    transition: .3s background-color ease-in-out, .3s color ease-in-out;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 520px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 80%;
+    }
+}
+.nav-container {
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 80%;
+    }
+}
+
+
+// Scrollbar styling
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+

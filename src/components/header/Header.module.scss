@@ -1,0 +1,54 @@
+.navbar {
+    height: 70px;
+    padding: 0 10%;
+    box-shadow: 1px 2px 18px rgba(0,0,0,.2);
+
+    @media (max-width: 568px) {
+        padding: 0 4%;
+    }
+
+    nav {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    ul, li {
+        list-style-type: none;
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    &__link {
+        display: flex;
+        position: relative;
+        font-size: 1.8rem;
+        transition: .3s background-color ease-in-out;
+        width: 100%;
+        padding: 16px 18px; 
+        justify-content: center;
+        min-width: 50px;
+
+        &.active {
+            border: .3px solid rgba(255,255,255,0.4);
+        }
+        
+        &:hover {
+            background-color: #24252A - 20;
+        }
+
+        .chatNotification :global {
+            margin-left: .75rem;
+            font-size: 1.1rem;
+            font-family: 'Raleway Bold', sans-serif;
+            background-color: rgba(148, 55, 55, 0.692);
+            color: #edf0f1;
+            border-radius: 1rem;
+            padding: .33rem .66rem;
+            animation: 1s bounce infinite;
+            animation-iteration-count: infinite;
+        }
+    }
+
+}

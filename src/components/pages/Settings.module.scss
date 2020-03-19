@@ -1,0 +1,75 @@
+.formOuter {
+    padding: 15px 0;
+}
+
+.formWrapper {
+    width:100%;
+    padding: 15px;
+    border: 1px solid;
+    font-family: 'IBM Plex Mono Regular', 'Roboto Regular', sans-serif;
+
+    h1 {
+        border-bottom:1px solid;
+    }
+    button {
+        padding: 15px;
+        border: none;
+        background-color: pink;
+        justify-content: flex-end;
+        cursor: pointer;
+        color: #555;
+        font-size: 1.5rem;
+        transition: .3s all ease-in-out;
+        font-family: 'IBM Plex Mono Bold', sans-serif;
+        margin: 10px 15px;
+    
+        &:hover {
+            background-color: rgb(116, 76, 82);
+            color: #eee;
+        }
+
+        &[type="reset"] {
+            background-color: rgb(119, 0, 18);
+            color: #fff;
+        }
+    }
+
+
+    .formControl {
+        display: flex;
+        margin: 15px 0;
+        flex-direction: column;
+
+        input {
+            font-family: 'IBM Plex Mono Regular', sans-serif;
+        }
+    
+        label {
+            flex-direction: row;
+            font-size:1.9rem;
+            padding:1rem;
+    
+            input:not([type="radio"]) {
+                display: flex;
+                margin: 10px 0;
+                padding:.5rem 1rem;
+                outline: none;
+                border: 1px solid;
+            }
+    
+            .checkboxWrapper {
+                display:flex;
+                
+                input[type="radio"] {
+                    margin: 10px 15px;
+                    margin-right: 15px;
+                }
+    
+                span {
+                    margin:5px 2px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,50 @@
+.outerSwitch {
+  display: flex;
+  align-self: center;
+}
+
+.switch {
+    visibility: hidden;
+}
+
+.switchLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 60px;
+    height: 35px;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    background-color: #0692ca9a;
+  
+    .toggle {
+      width: 27px;
+      height: 27px;
+      border-radius: 30px;
+      background-color: #ff7;
+      position: absolute;
+      left: 5px;
+      transition: 0.3s all ease;
+    }
+  }
+
+  
+ .switch:checked {
+    ~.switchLabel {
+      transition: 0.5s all ease;
+      background: black;
+      border: none;
+      .toggle {
+        height: 14.5px;
+        transform: scale(0.9) translateX(27px) rotate(90deg);
+        transition: 0.3s all ease;
+        border-radius: 25px 25px 0 0; 
+        background: transparent;
+        box-shadow: 0px -6px 0 0 #ff7;
+      }
+    }
+  }
+  
