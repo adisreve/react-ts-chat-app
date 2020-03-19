@@ -62,7 +62,7 @@ Installation of dependencies could take a few minutes to finish.
 
 ## Usage
 
-To start the application, we first need to run the server - ```yarn run app``` or ```node server.js``` after which Socket.io will be open and listen on PORT 3001. 
+To start the application, we first need to run the server - ```yarn run server``` or ```node server`` after which Socket.io connections will be instanciated and server will listen for events on PORT 3001
 
 Port is defined in `server.js` file, so it can be easily reconfigured if needed. If deployed somewhere else, it is set up that it works equally as well for production use.
 
@@ -74,13 +74,13 @@ When application starts, go to settings and update username, after which you can
 
 #### Alternatively
 
-Run npm start in root folder and the app will be hosted on `http://localhost:3001`
+Run ```yarn run app``` in root folder and the app (server and client-side) will be hosted on `http://localhost:3001`
 
 **Happy Chatting!** :smile:
 
 # Build
 
-To build the app, just enter ```yarn run build```, which will generate a folder called `build/`
+To build the app, type ```yarn run build``` - this will generate a folder `build/`, from which we can serve the app
 
 ## Technical Details
 
