@@ -58,22 +58,21 @@ Clone the project to your local directory.
 
 After cloning is done, run command ```yarn install``` to install all necessary dependencies for the project:
 
-Do the same command for the `client/` folder. Installation of dependencies could take a few minutes to finish. 
+Installation of dependencies could take a few minutes to finish. 
 
 ## Usage
 
-To start the application, we first need to run the server - ```yarn start```, after which Socket.io will be open and listen on PORT 3001. 
+To start the application, we first need to run the server - ```yarn run app``` or ```node server.js``` after which Socket.io will be open and listen on PORT 3001. 
 
 Port is defined in `server.js` file, so it can be easily reconfigured if needed. If deployed somewhere else, it is set up that it works equally as well for production use.
 
 ``const port = process.env.PORT || 3001;``
 
-After starting a server, run React app by executing the following command ```yarn start``` in `client\` subfolder.
+After starting a server, run React app by executing the following command ```yarn start```.
 
+When application starts, go to settings and update username, after which you can open a new window with `localhost:3000` - (preferably in Incognito mode or different browser/same browser with different application state).
 
-When application starts, go to settings and update username, after which you can open a new window with `localhost:3000` - (preferably in Incognito mode or different browser/same browser with different application state). 
-
-##### Alternatively
+#### Alternatively
 
 Just run npm start in root folder and the app will be hosted on `http://localhost:3001`
 
@@ -89,7 +88,7 @@ Browserlist Target: >0.2%, not dead
 
 ## Author
 
-👤 ** Adis Jugo **
+👤 **Adis Jugo**
 
 * Website: http://jugoadis.com
 * Twitter: [@adisreve](https://twitter.com/adisreve)
