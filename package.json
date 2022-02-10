@@ -17,7 +17,7 @@
     "@types/styled-components": "^5.0.1",
     "express": "^4.17.1",
     "linkifyjs": "^2.1.9",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-emoji-render": "^1.2.2",
